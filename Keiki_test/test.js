@@ -13,9 +13,9 @@ function changeValueAndClick() {
     changeValueAndClick();
 
 
-//4. Спустя секунду после ивента ajaxComplete мы снова выполняем функцию
+//4. Спустя секунду после ивента ajaxComplete мы снова выполняем функцию и перебираем значения вплоть до 1000. 
 jQuery(document).on('ajaxComplete', () => {
-    if (i < 100) {
+    if (i < 1000) {
         setTimeout(changeValueAndClick, 1000);
     } 
     
